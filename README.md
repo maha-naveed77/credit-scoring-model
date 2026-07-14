@@ -1,18 +1,18 @@
-# 💳 Credit Scoring Model
+# Credit Scoring Model
 
 A machine learning web app that predicts credit risk (Good/Bad) for bank loan applicants using a Random Forest classifier trained on the German Credit Dataset.
 
 ---
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 credit-scoring/
-├── train.py           ← Run this first — trains model and saves artifacts
-├── app.py             ← Streamlit web app
-├── requirements.txt   ← Python dependencies
-├── README.md          ← You are here
-└── model/             ← Auto-created when you run train.py
+├── train.py           
+├── app.py             
+├── requirements.txt   
+├── README.md          
+└── model/             
     ├── random_forest.pkl
     ├── logistic_regression.pkl
     ├── scaler.pkl
@@ -23,7 +23,7 @@ credit-scoring/
 
 ---
 
-## 🚀 How to Run
+## How to Run
 
 **Step 1 — Install dependencies:**
 ```bash
@@ -44,7 +44,7 @@ Opens in your browser at `http://localhost:8501`
 
 ---
 
-## 🧠 ML Pipeline
+## ML Pipeline
 
 | Step | What Happens |
 |------|-------------|
@@ -57,7 +57,7 @@ Opens in your browser at `http://localhost:8501`
 
 ---
 
-## 📊 Results
+## Results
 
 | Model | Accuracy | ROC-AUC | Bad Credit F1 |
 |-------|----------|---------|---------------|
@@ -73,7 +73,7 @@ Opens in your browser at `http://localhost:8501`
 
 ---
 
-## 🔍 Key Observations
+##  Key Observations
 
 - **Class imbalance** (700 good vs 300 bad) causes lower recall on bad credit cases — the model sees far more good examples during training
 - **Feature engineering added value** — the two derived features ranked #1 and #2 in importance, outperforming all original columns
@@ -81,7 +81,7 @@ Opens in your browser at `http://localhost:8501`
 
 ---
 
-## 🛠️ Tech Stack
+##  Tech Stack
 
 - Python 3.10+
 - scikit-learn — model training and evaluation
@@ -92,7 +92,7 @@ Opens in your browser at `http://localhost:8501`
 
 ---
 
-## 📌 Dataset
+##  Dataset
 
 **German Credit Dataset** via OpenML (`credit-g`, version 1)  
 1000 applicants · 20 features · Binary classification (good/bad credit)  
